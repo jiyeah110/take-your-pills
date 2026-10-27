@@ -1,0 +1,6 @@
+{
+  "name": "Medication Packet To-Do",
+  "description": "An interactive daily to-do list modeled after realistic transparent pharmacy medicine packets and physical pill interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

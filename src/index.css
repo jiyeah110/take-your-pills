@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Pharmacy pouch heat seal crimp pattern */
+  .pouch-heat-seal-h {
+    background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.8) 0px,
+      rgba(255, 255, 255, 0.8) 1.5px,
+      rgba(0, 0, 0, 0.05) 1.5px,
+      rgba(0, 0, 0, 0.05) 3.5px
+    );
+  }
+
+  .pouch-heat-seal-v {
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.8) 0px,
+      rgba(255, 255, 255, 0.8) 1.5px,
+      rgba(0, 0, 0, 0.05) 1.5px,
+      rgba(0, 0, 0, 0.05) 3.5px
+    );
+  }
+
+  /* Vinyl pouch subtle reflection overlay */
+  .vinyl-sheen {
+    background: linear-gradient(
+      125deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0.02) 40%,
+      rgba(255, 255, 255, 0.25) 70%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+  }
+
+  /* Pinked zigzag perforated strip cut edge (repeating triangular teeth) */
+  .pinked-edge-top {
+    background-image: radial-gradient(circle at 50% 0%, transparent 4px, #ffffff 4.5px);
+    background-size: 10px 6px;
+    background-repeat: repeat-x;
+  }
+
+  .pinked-edge-bottom {
+    background-image: radial-gradient(circle at 50% 100%, transparent 4px, #ffffff 4.5px);
+    background-size: 10px 6px;
+    background-repeat: repeat-x;
+  }
+
+  /* Perforation stitch lines */
+  .perforation-dots {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.22) 1px, transparent 1.5px);
+    background-size: 6px 6px;
+    background-repeat: repeat-x;
+  }
+
+  /* Glass caustic shimmer */
+  .glass-water-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(224, 242, 254, 0.15) 0%,
+      rgba(186, 230, 253, 0.28) 40%,
+      rgba(125, 211, 252, 0.42) 100%
+    );
+  }
+}
+
+/* Custom font classes for printed pharmacy thermal text */
+.font-pharmacy {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
